@@ -1,33 +1,30 @@
 anacision Coding Challenge
-Bewerbung bei anacision.
+
  
- 
-Aufgabe 1: Datenexploration und Vorhersagemodell
- 
-Wir schicken dir im Nachgang einen Datensatz zu („flights.csv“), der Informationen über Flüge enthält. Bitte:
-- führe eine explorative Datenanalyse durch, insbesondere bezüglich der Frage, welche Faktoren/Treiber Verspätungen bei Ankünften (arr_delay) und Abflügen (dep_delay) beeinflussen.
-- erstelle ein Vorhersagemodell für die binäre Aussage, ob ein Abflug mehr als 30 Minuten verspätet ist (ohne Nutzung der Verspätung der Ankunft). Nutze dazu einen geeigneten Evaluationsdatensatz.
- 
-In unserem Termin bitte wir dich, das Vorgehen und die Ergebnisse Deiner deskriptiven Datenanalyse vorzustellen. Bitte keine PowerPoint Folien erstellen, ein jupyter Notebook oder ähnliches reicht aus.
- 
- 
-Aufgabe 2: Software Engineering
- 
-Bitte schreibe eine robuste, wartbare, und erweiterbare Kommandozeilenanwendung, mit der man CSV Dateien anzeigen kann. Die Anzeige soll im Terminal stattfinden, es ist kein GUI notwendig. In unserem Termin bitte wir dich, das Vorgehen und deine App vorzustellen. Bitte keine PowerPoint Folien erstellen, die Vorstellung des Codes in der IDE genügt.
- 
-Im Nachgang erhältst du ein Beispiel für eine Datei („Personen.csv“). Nutze sie gerne für die Implementierung und die Vorstellung deiner Umsetzung.
- 
-Die Logik der Anwendung ist simpel: Sie ruft eine CSV Datei auf, die dann angezeigt werden soll. Bei Aufruf soll die Datei per Argument spezifiziert werden können.
- 
-Die Anzeige soll folgenden Anforderungen entsprechen:
-- Jede Seite wird mit Spaltenüberschriften ausgegeben
-- Jede Seite besteht aus 10 Dateneinträgen (Zeilen)
-- Es gibt Zellenseparierungzeichen (Genau wie im Beispiel)
-- Die Spalten haben eine feste Breite, die dem längsten Eintrag je Spalte entspricht
-- Durch Drücken der Tasten F/P/N/L/E werden die im Beispiel gezeigten Befehle ausgeführt (Hierfür kannst du z.B. den input() Befehl benutzen)
- 
-Die einzelnen Seiten werden als Tabelle mit Überschrift und Zellenmarkierung dargestellt. Du kannst davon ausgegangen, dass die CSV Dateien wie folgt aussehen:
-- Die erste Zeile enthält die Überschriften
-- Die Spalten sind durch “;“ getrennt, die Kodierung ist utf-8
-- Eine neue Zeile ist durch einen Zeilenumbruch codiert, andere Zeilenumbrüche gibt es nicht
- 
+# Task 1 
+## Flights Dataset:
+#### - Exploratory Data Analysis of the Dataset
+Tackle which factors/drivers influence delays in arrivals and departures. 
+#### - Prediction Model
+Predict whether a departure is delayed by more than 30 minutes. 
+
+
+# Task 2
+## CSV Displayer
+A robust, maintainable, and expandable application that can display CSV files.
+
+#### The displayer satisfies the following requirements:
+- Each page is output with column headers
+- Each page consists of a specified number of data rows
+- Cells are vertically separated by the "|" character.
+- The headers are separated from the data by a row of "-" and "+" characters.
+- The columns have a fixed width, corresponding to the longest entry per column.
+- Pressing the keys F/P/N/L/E, executes commands.
+
+#### Assumption about CSV file:
+- First row contains the headers.
+- Column are divided by “;“.
+- The encoding is utf-8.
+- New rows are encoded by a line break.
+
+The application is tested using the "people.csv" file. 
